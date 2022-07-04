@@ -183,7 +183,7 @@ function activeLink() {
         })
         .filter((sct) => sct.y <= 0);
 
-    let currSectionID = passedSections.at(-1).id;
+    let currSectionID = passedSections[passedSections.length-1].id;
 
     links.forEach((l) => l.classList.remove("active"));
     links[currSectionID].classList.add("active");
